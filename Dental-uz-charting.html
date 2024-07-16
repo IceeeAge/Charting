@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .polygon {
+      stroke: rgb(82, 82, 82);
+      stroke-width: 1;
+      margin-bottom: 30px;
+    }
+    .unmarked {
+      fill: white;
+    }
+    .marked.red {
+      fill: rgba(255, 0, 0, 0.799);
+    }
+    .marked.blue {
+      fill: rgba(0, 0, 255, 0.799);
+    }
+    .marked.black {
+      fill: rgba(0, 0, 0, 0.799);
+    }
+    .marked.white {
+     fill: white;
+    }
+    #dental-chart {
+      text-align: center;
+      margin-top: 100px;
+    }
+    .color-picker {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="dental-chart">
+    <div class="color-picker">
+        <div>DENTAL UZ</div>
+        <div>CHARTING</div><br>
+        <br>
+        <div><button class="print-button" onclick="printToPDF()">Print to PDF</button></div>
+        <br>
+        <br>
+        
+        <label for="color">Choose a color:</label>
+        <select id="color">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        
+    </div>
+    <table align="center">
+      <tbody>
+        <tr>
+          <td class="number">18</td>
+          <td>17</td>
+          <td>16</td>
+          <td>15</td>
+          <td>14</td>
+          <td>13</td>
+          <td>12</td>
+          <td>11</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="18-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="18-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="18-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="18-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="18-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="17-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="17-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="17-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="17-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="17-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="16-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="16-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="16-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="16-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="16-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="15-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="15-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="15-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="15-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="15-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="14-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="14-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="14-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="14-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="14-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="13-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="13-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="13-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="13-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="13-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="12-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="12-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="12-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="12-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="12-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="11-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="11-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="11-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="11-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="11-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="21-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="21-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="21-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="21-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="21-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="22-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="22-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="22-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="22-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="22-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="23-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="23-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="23-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="23-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="23-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="24-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="24-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="24-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="24-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="24-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="25-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="25-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="25-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="25-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="25-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="26-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="26-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="26-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="26-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="26-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="27-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="27-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="27-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="27-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="27-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+          <td>
+            <svg width="30" height="30" transform="scale(1,-1)" class="molar">
+              <polygon id="28-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="28-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="28-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="28-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="28-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td> 
+        </tr>
+    </tr>
+      <!-- BREACK LINE -->
+    <tr>
+      <td>
+        <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+          <polygon id="48-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+          <polygon id="48-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+          <polygon id="48-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+          <polygon id="48-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+          <polygon id="48-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+        </svg>
+      </td>
+      <td>
+        <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+          <polygon id="47-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+          <polygon id="47-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+          <polygon id="47-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+          <polygon id="47-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+          <polygon id="47-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+        </svg>
+      </td>
+      <td>
+        <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+          <polygon id="46-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+          <polygon id="46-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+          <polygon id="46-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+          <polygon id="46-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+          <polygon id="46-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+        </svg>
+        <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="45-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="45-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="45-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="45-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="45-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="44-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="44-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="44-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="44-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="44-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="43-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="43-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="43-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="43-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="43-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="42-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="42-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="42-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="42-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="42-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="41-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="41-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="41-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="41-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="41-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="31-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="31-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="31-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="31-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="31-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="32-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="32-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="32-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="32-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="32-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="33-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="33-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="33-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="33-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="33-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="34-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="34-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="34-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="34-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="34-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="35-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="35-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="35-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="35-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="35-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="36-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="36-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="36-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="36-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="36-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="37-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="37-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="37-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="37-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="37-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+          <td>
+            <svg width="30" height="50" transform="scale(1,-1)" class="molar">
+              <polygon id="38-top" points="0,0 30,0 20,10 10,10" class="polygon unmarked"></polygon>
+              <polygon id="38-left" points="0,0 10,10 10,20 0,30" class="polygon unmarked"></polygon>
+              <polygon id="38-bottom" points="0,30 10,20 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="38-right" points="30,0 20,10 20,20 30,30" class="polygon unmarked"></polygon>
+              <polygon id="38-center" points="10,10 20,10 20,20 10,20" class="polygon unmarked"></polygon>    
+            </svg>
+          </td>
+        </tr>
+            <tr>
+                <td>48</td>
+                <td>47</td>
+                <td>46</td>
+                <td>45</td>
+                <td>44</td>
+                <td>43</td>
+                <td>42</td>
+                <td>41</td>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+                <td>37</td>
+                <td>38</td>
+              </tr>
+        
+      </td>
+      </tbody>
+    </table>
+  </div>
+  <script>
+     function toggleMarkPolygon(polygonId, color) {
+      var polygon = document.getElementById(polygonId);
+
+      // Remove previously applied color classes
+      polygon.classList.remove('red', 'blue', 'black','white');
+
+      // If the polygon was already marked with the same color, unmark it
+      if (polygon.classList.contains('marked') && polygon.classList.contains(color)) {
+        polygon.classList.remove('marked', color);
+      } else {
+        // Mark with the new color
+        polygon.classList.add('marked', color);
+      }
+    }
+
+    document.querySelectorAll('.polygon').forEach(function(polygon) {
+      polygon.addEventListener('click', function() {
+        var color = document.getElementById('color').value;
+        toggleMarkPolygon(this.id, color);
+      });
+    });
+
+    function printToPDF() {
+      window.print();
+    }
+
+    
+  </script>
+</body>
+</html>
