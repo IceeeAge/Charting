@@ -31,13 +31,43 @@
     .color-picker {
       margin-bottom: 50px;
     }
+
+
+     /* Responsive Design */
+  @media (max-width: 600px) {
+    #dental-chart {
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .color-picker h1 {
+      font-size: 1.2rem;
+      
+    }
+    .color-picker select {
+      font-size: 0.9rem;
+    }
+    .print-button {
+      font-size: 0.9rem;
+    }
+    table {
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    .color-picker {
+      background-color: red;
+    }
+
+  }
   </style>
 </head>
 <body>
 
   <div id="dental-chart">
     <div class="color-picker">
-        <h1>UZ Dentistry</h1>
+      <h1>UZ Dentistry</h1>
         <div>CHARTING</div><br>
         <br>
         <div><button class="print-button" onclick="printToPDF()">Print to PDF</button></div>
